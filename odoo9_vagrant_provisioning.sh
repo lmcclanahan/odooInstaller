@@ -3,6 +3,8 @@
 vagrant init ubuntu/trusty64
 vagrant up --provider virtualbox --no-parallel --destroy-on-error --install-provider
 vagrant ssh
+sudo apt-get update;
+sudo apt-get install git curl wget vim mlocate -y
 wget https://raw.githubusercontent.com/Yenthe666/InstallScript/9.0/odoo_install.sh
 chmod +x odoo_install.sh
 ./odoo_install.sh
